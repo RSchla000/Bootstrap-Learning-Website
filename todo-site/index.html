@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Fun -- Step-by-step guide</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <style>
+    body { padding: 20px; background: #f8f9fa; font-family: "Segoe UI", Roboto, sans-serif; }
+    .step { background: white; padding: 16px; margin-bottom: 18px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+    .hint { font-size: .95rem; color: #555; }
+    .note { font-size:.9rem; color:#444; background:#f1f1f1; padding:6px 8px; border-radius:6px; display:inline-block; margin-top:8px; }
+    code{ color: blue}
+  </style>
+
+
+</head>
+<body>
+    <div class="container"></div>
+    <header class="mb-4">
+        <nav class="bg-primary p-3 rounded">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../todo-site/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../todo-site/tasks.html">Tasks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../todo-site/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../todo-site/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="jumbotron text-center">
+        <h1 class="display-4 text-danger">Welcome, to the world of Coding!</h1>
+        <p class="lead text-muted"> This is a tiny 4 page website made with Bootstrap CSS only -- no Javascript</p>
+        <p class="mb-0">Open <code>tasks.html</code> to see a static todo list. Try editing a class to change colors.</p>
+    </section>
+
+    <section class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Colors (text utilities)</h5>
+                    <p class="text-primary">.text-primary -- primary color</p>
+                    <p class="text-success">.text-success -- success (green)</p>
+                    <p class="text-warning">.text-warning -- warning (yellow)</p>
+                    <p class="text-danger">.text-danger -- danger (red)</p>
+                    <p class="text-muted small mb-0">Try changing classes in your editor and refresh this page.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Buttons & Groups</h5>
+                    <p class="mb-2">You can group buttons so they look tidy:</p>
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-primary">One</button>
+                        <button class="btn btn-secondary">Two</button>
+                        <button class="btn btn-success">Three</button>
+                    </div>
+                    <p class="mt-2 small text-muted mb-0">Note: a real dropdown toggle needs JS; this shows grouping only.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 mt-4">
+        <small class="text-muted"> Made with Bootstrap classes: .jumbotron .card .btn-group .nav .text-* </small>
+    </footer>
+</div>
+</body>
+</html>
