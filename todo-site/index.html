@@ -10,12 +10,14 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="side.css">
     <style>
-    body { padding: 20px; background: #f8f9fa; font-family: "Segoe UI", Roboto, sans-serif; }
-    .step { background: white; padding: 16px; margin-bottom: 18px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+    body { padding: 20px; background-image: url(../images/indexbackground.png); background-repeat: no-repeat; background-size: cover; font-family: "Segoe UI", Roboto, sans-serif; }
+    .step { background: rgb(249, 166, 166); padding: 16px; margin-bottom: 18px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
     .hint { font-size: .95rem; color: #555; }
     .note { font-size:.9rem; color:#444; background:#f1f1f1; padding:6px 8px; border-radius:6px; display:inline-block; margin-top:8px; }
     code{ color: blue}
+    section.jumbotron { background: rgba(247, 247, 247, 0.058); }
   </style>
 
 
@@ -23,7 +25,7 @@
 <body>
     <div class="container"></div>
     <header class="mb-4">
-        <nav class="bg-primary p-3 rounded">
+        <nav class="bg-dark p-3 rounded">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link text-white" href="../todo-site/index.html">Home</a>
@@ -37,48 +39,44 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="../todo-site/contact.html">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../todo-site/main-page.html">Join Today</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <section class="jumbotron text-center">
-        <h1 class="display-4 text-danger">Welcome, to the world of Coding!</h1>
-        <p class="lead text-muted"> This is a tiny 4 page website made with Bootstrap CSS only -- no Javascript</p>
-        <p class="mb-0">Open <code>tasks.html</code> to see a static todo list. Try editing a class to change colors.</p>
+        <h1 class="display-4 text-success">Welcome, to the World of Mako Energy!</h1>
+        <p class="lead text-muted"> Mako is the leading source of energy in todays modern world and Shin-Ra is at the forefront of this revolution.</p>
     </section>
 
-    <section class="row">
+    <section class="row d-flex justify-content-center">
         <div class="col-md-6 mb-3">
             <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Colors (text utilities)</h5>
-                    <p class="text-primary">.text-primary -- primary color</p>
-                    <p class="text-success">.text-success -- success (green)</p>
-                    <p class="text-warning">.text-warning -- warning (yellow)</p>
-                    <p class="text-danger">.text-danger -- danger (red)</p>
-                    <p class="text-muted small mb-0">Try changing classes in your editor and refresh this page.</p>
+                <div class="card-body" style="background: rgba(30, 30245, 27, 0.8);">
+                    <h5 class="card-title text-white">Company Overview</h5>
+                    <p class="text-white">Using Midgar as its base of operations, this massive conglomerate maintains an ironclad grip on the world. Originally a small weapons manufacturer, the advent of mako energy has provided Shinra with unprecedented growth and profits. Currently, the company focuses on mako energy, arms development, urban planning, space and aeronautics, and food and pharmaceutical production</p>
+                    
                 </div>
             </div>
         </div>
-
-        <div class="col-md-6 mb-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Buttons & Groups</h5>
-                    <p class="mb-2">You can group buttons so they look tidy:</p>
-                    <div class="btn-group" role="group">
-                        <button class="btn btn-primary">One</button>
-                        <button class="btn btn-secondary">Two</button>
-                        <button class="btn btn-success">Three</button>
-                    </div>
-                    <p class="mt-2 small text-muted mb-0">Note: a real dropdown toggle needs JS; this shows grouping only.</p>
-                </div>
+     </section>
+     <section class="btn-group d-flex justify-content-center">
+        <div class="d-flex flex-column align-items-center" style="background-color: rgba(30, 245, 27, 0.8); padding:8px 12px; border-radius:6px;">
+            <h5 class="text-white mb-2">Explore Our Initiatives</h5>
+            <div class="btn-group" role="group" aria-label="Initiatives">
+                <button type="button" class="btn btn-light">Energy</button>
+                <button type="button" class="btn btn-light">Space Program</button>
+                <button type="button" class="btn btn-light">Military</button>
             </div>
         </div>
-    </section>
+     </section>
+
+     <div> <img src="../images/ShinraPropaganda.webp" alt="Victory"></div>
 
     <footer class="text-center py-3 mt-4">
-        <small class="text-muted"> Made with Bootstrap classes: .jumbotron .card .btn-group .nav .text-* </small>
+        <small class="text-danger"> Shin-Ra Corporation LLC. </small>
     </footer>
 </div>
 </body>
