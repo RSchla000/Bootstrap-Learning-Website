@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Fun -- Step-by-step guide</title>
+    <title>Shinra</title>
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"/>
@@ -11,10 +11,11 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
     <style>
-    body { padding: 20px; background: #f8f9fa; font-family: "Segoe UI", Roboto, sans-serif; }
+    body { padding: 20px; background-image: url(../images/Shinra_Manufacturing.webp); background-repeat: no-repeat; background-size: cover; font-family: "Segoe UI", Roboto, sans-serif; }
     .step { background: white; padding: 16px; margin-bottom: 18px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
     .hint { font-size: .95rem; color: #555; }
     .note { font-size:.9rem; color:#444; background:#f1f1f1; padding:6px 8px; border-radius:6px; display:inline-block; margin-top:8px; }
+  section.jumbotron { background: rgba(247, 247, 247, 0.058); }
   </style>
 
 
@@ -35,13 +36,16 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="../todo-site/contact.html">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../todo-site/main-page.html">Join Today</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <section class="jumbotron">
-        <h1 class="display-5 text-primary">About this Mini-Site</h1>
-        <p class="lead text-muted">Short notes for teachers and kids explaining the Bootstrap classes used on the site</p>
+        <h1 class="display-5 text-success">About the Company</h1>
+        <p class="lead text-white">Meet the ones who keep Midgar and the world ticking along!</p>
     </section>
 <section class="row">
 <div class="col-md-6">
@@ -73,6 +77,52 @@
     </div>
 </div>
 </section>
+
+<section class="step">
+        <h3>Meet the Departments</h3>
+        <div class="table-responsive">
+
+
+            <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Division</th>
+            <th>Department Head</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Advanced Weaponary</td>
+            <td>Scarlet</td>
+            <td>--Redacted--</td>
+          </tr>
+          <tr>
+            <td>Research and Development</td>
+            <td>Professor Hojo</td>
+            <td>--Redacted--</td>
+          </tr>
+          <tr>
+            <td>Urban Planning</td>
+            <td>Reeve Tuetsi</td>
+            <td>--Redacted--</td>
+          </tr>
+            <tr>
+                <td>Space Program</td>
+                <td>Palmer</td>
+                <td>--Redacted--</td>
+            </tr>
+            <tr>
+                <td>Public Security Forces</td>
+                <td>Heidegger</td>
+                <td>--Redacted--</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+    
+    </section>
 
 <footer class="text-center py-3">
     <small class="text-muted">Teacher tip: show kids how a tiny edit in VS Code changes the page.</small>
