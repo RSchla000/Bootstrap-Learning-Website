@@ -1,8 +1,33 @@
-img{ 
-    max-width: 300px; height: 900px; 
-border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
-    display: absolute;
-    ;
+.avatar1 {
+  height: 210px;
+  width: 210px;
+  background-image: url(../images/President_Shinra.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0px solid black;
+  border-radius: 50%;
+  opacity: 0.90;
+  margin-bottom: 20px;
+
+  position: absolute;
+  left: 530px;
+  top:225px;
+}
+
+.avatar2 {
+  height: 210px;
+  width: 210px;
+  background-image: url(../images/Rufus_Shinra.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0px solid black;
+  border-radius: 50%;
+  opacity: 0.90;
+  margin-bottom: 20px;
+
+  position: absolute;
+  left: 1230px;
+  top:225px;
 }
